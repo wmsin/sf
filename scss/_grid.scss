@@ -1,0 +1,98 @@
+/* сетка */
+
+$full: 100%;
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.flex {
+	display: flex;
+}
+
+.width-1-1{
+	width: $full;
+}
+
+.width-1-2{
+	width: $full/2;
+}
+
+.width-1-3{
+	width: $full/3;
+}
+
+.width-2-3{
+	width: 2*$full/3;
+}
+
+.width-1-4{
+	width: $full/4;
+}
+
+.width-3-4{
+	width: 3*$full/4;
+}
+
+.width-1-5{
+	width: $full/5;
+}
+
+.width-2-5{
+	width: 2*$full/5;
+}
+
+.width-3-5{
+	width: 3*$full/5;
+}
+
+.width-4-5{
+	width: 4*$full/5;
+}
+
+.padding-small {
+	padding: .5rem;
+}
+
+.padding-normal {
+	padding: 1rem;
+}
+
+.padding-large{
+	padding: 1.5rem;
+}
+
+.margin-small {
+	margin: .5rem;
+}
+
+.top-margin-small {
+	margin-top: .5rem;
+}
+
+.bottom-margin-small {
+	margin-bottom: .5rem;
+}
+
+.left-margin-small {
+	margin-left: .5rem;
+}
+
+.right-margin-small {
+	margin-right: .5rem;
+}
+
+.margin-normal {
+	margin: 1rem;
+}
+
+.margin-large{
+	margin: 1.5rem;
+}
+
+.vertical-top {
+	justify-content: flex-start;
+}

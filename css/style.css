@@ -1,0 +1,19 @@
+html {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	background: #2B6CC4;
+	color: #333;
+}
+
+.container-1000 {
+	background: #FFF;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.hor-menu {
+	background: #333;
+	color: #fff;
+}

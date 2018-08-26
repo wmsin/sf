@@ -1,0 +1,71 @@
+/* горизонтальное меню */
+
+.hor-menu {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	li {
+		display: inline-flex;
+		
+		a {
+			display: inline-flex;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			min-width: 100px;
+			min-height: 40px;
+			transition: all .3s ease 0s;
+			padding: .5rem;
+			background: #333;
+			color: #fff;
+
+			&:hover {
+				color: #333;
+				background: #eee;
+			}
+		}
+
+		a.active {
+			color: #333;
+			background: #eee;
+		}
+
+		.submenu {
+			display: inline-flex;
+			flex-direction: column;
+			min-width: 150px;
+			box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+			position: absolute;
+			top: -9999px;
+			opacity: 0;
+			transition: opacity .5s ease 0s;
+				
+			li {
+				display: inline-flex;
+
+				a{
+					display: inline-flex;
+					justify-content: left;
+					align-items: center;
+					width: 100%;
+					min-height: 40px;
+					transition: all .3s ease 0s;
+					padding: .5rem;
+					background: #eee;
+					color: #333;
+					
+					&:hover {
+						color: #fff;
+						background: #333;
+					}
+				}
+			}
+		}
+	}
+	li:hover > .submenu {
+		top: 40px;
+		opacity: 1;
+	}
+}
